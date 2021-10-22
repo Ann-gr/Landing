@@ -1,5 +1,6 @@
 Hello users!
-
+<ul>
 <% for(var user of users) { %>
-    <p><%= user.name %></p>
+    <li><a href="/users/<%= user.id %>"><%= user.name %></a></li>
 <% } %>
+</ul>

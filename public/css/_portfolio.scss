@@ -12,4 +12,31 @@
     background-color: #FFFFFF;
     padding: 100px 150px 70px 60px;
     margin-left: -60px;
+    & h1 {
+        font-weight: 700;
+        font-size: 39px;
+    }
+    & span {
+        color: #F78065;
+    }
+    & .offer-text {
+        opacity: 60%;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    & .offer-button {
+        width: 250px;
+        height: 65px;
+        background-color: #F78065;
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        display: block;
+        text-align: center;
+        padding: 21px 77px 21px 101px;
+        text-decoration: none;
+    }
+    & .offer-icon {
+      
+    }
 }
