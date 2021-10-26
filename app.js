@@ -1,5 +1,6 @@
 const express = require("express");
 const User = require("./model/User");
+const { promos, managers } = require("./data/landing");
 const app = express();
 const PORT = 3001;
 app.set("view engine", "ejs");
@@ -27,20 +28,13 @@ app.get("/users/:id", (req, res) => {
 
 app.get("/portfolio", (req, res) => {
   res.render("portfolio", {
-    promos: [
-      {
-        img: "/img/portfolio/promo-1.jpg",
-      },
-      {
-        img: "/img/portfolio/promo-2.jpg",
-      },
-      {
-        img: "/img/portfolio/promo-3.jpg",
-      },
-    ],
+    promos: promos,
+    managers: managers,
   });
 });
+
 
 app.listen(PORT, () => {
   console.log(`Server app listening at http://localhost:${PORT}`);
 });
+

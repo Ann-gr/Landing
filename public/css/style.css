@@ -11464,6 +11464,10 @@ fieldset:disabled .btn {
   padding: 40px 0px 60px 0px;
 }
 
+section {
+  margin-bottom: 230px;
+}
+
 .portfolio-block {
   -webkit-box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
@@ -11513,6 +11517,16 @@ fieldset:disabled .btn {
   font-weight: 700;
   font-size: 18px;
   text-decoration: none;
+}
+
+.item p {
+  color: #808080;
+}
+
+.item a {
+  color: #F78065;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .special {

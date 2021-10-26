@@ -1,88 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Photographer Saint-Petersburg</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="portfolio-bg">
-        <div class="container">
-            <div class="icons-wrapper d-flex justify-content-between">
-                <div class="logo-icon">
-                    <img src="img/portfolio/logo.png" alt="Logo">
-                </div>
-                <div class="user-icon">
-                    <img src="img/portfolio/user.png" alt="User">
-                </div>
-            </div>
-            <div class="portfolio-block">
-                <h1>Find out how we can <span>save your time</span> in Backpacking in Europe</h1>
-                <p class="offer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, molestiae.</p>
-                <div class="offer-button">
-                    <a href="">Explore</a>
-                </div> 
-            </div>
+      <div class="container">
+        <div class="icons-wrapper d-flex justify-content-between">
+          <div class="logo-icon">
+            <img src="img/portfolio/logo.png" alt="Logo" />
+          </div>
+          <div class="user-icon">
+            <img src="img/portfolio/user.png" alt="User" />
+          </div>
         </div>
+        <div class="portfolio-block">
+          <h1>
+            Find out how we can <span>save your time</span> in Backpacking in
+            Europe
+          </h1>
+          <p class="offer-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+            molestiae.
+          </p>
+          <div class="offer-button">
+            <a href="">Explore</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-        <div class="container">
-            <div class="row">
-                <% for(var promo of promos) { %>
-                    <div class="col-md-4">
-                        <div class="item">
-                            <img src="<%= promo.img %>" alt="">
-                            <h3>Promoting your territory towards foreign tourists</h3>
-                            <p>EasyCamper wants to promote the excellence of Italian food and wine, art, culture and the economy.</p>
-                            <a>Discover the places linked to your area that you can link to your structure</a>
-                        </div>
-                    </div>
-                <% } %>
+      <div class="container">
+        <section>
+          <div class="row">
+            <% for (var promo of promos) { %>
+            <div class="col-md-4"><%- include('item', {item: promo}); %></div>
+            <% } %>
+          </div>
+        </section>
+        <section>
+          <h2>Making your facility known is our priority</h2>
+          <div class="row">
+            <div class="col-md-3">
+              <!-- <%- include('item', {item:{
+                        img: "/img/portfolio/icon-1.svg",
+                        title: "Hello",
+                        text: "User here"
+                    }}); %> -->
+              <div class="item">
+                <img src="/img/portfolio/icon-1.svg" alt="" />
+                <h3>Choose the type of stop</h3>
+                <p>
+                  Select the type of stopover you are ordering from Equipped
+                  Area, Camping and Agricamping
+                </p>
+                <a href="#">Show me more</a>
+              </div>
             </div>
-            <h2>Making your facility known is our priority</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="item">
-                        <img src="/img/portfolio/icon-1.svg" alt="">
-                        <h3>Choose the type of stop</h3>
-                        <p>Select the type of stopover you are ordering from Equipped Area, Camping and Agricamping</p>
-                        <a>Show me more</a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <img src="/img/portfolio/icon-2.svg" alt="">
-                        <h3>Choose the type of stop</h3>
-                        <p>Select the type of stopover you are ordering from Equipped Area, Camping and Agricamping</p>
-                        <a>Show me more</a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <img src="/img/portfolio/icon-3.svg" alt="">
-                        <h3>Choose the type of stop</h3>
-                        <p>Select the type of stopover you are ordering from Equipped Area, Camping and Agricamping</p>
-                        <a>Show me more</a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item">
-                        <img src="/img/portfolio/icon-4.svg" alt="">
-                        <h3>Choose the type of stop</h3>
-                        <p>Select the type of stopover you are ordering from Equipped Area, Camping and Agricamping</p>
-                        <a>Show me more</a>
-                    </div>
-                </div>
+            <div class="col-md-3">
+              <div class="item">
+                <img src="/img/portfolio/icon-2.svg" alt="" />
+                <h3>Choose the type of stop</h3>
+                <p>
+                  Select the type of stopover you are ordering from Equipped
+                  Area, Camping and Agricamping
+                </p>
+                <a href="#">Show me more</a>
+              </div>
             </div>
-            
-        </div>
+            <div class="col-md-3">
+              <div class="item">
+                <img src="/img/portfolio/icon-3.svg" alt="" />
+                <h3>Choose the type of stop</h3>
+                <p>
+                  Select the type of stopover you are ordering from Equipped
+                  Area, Camping and Agricamping
+                </p>
+                <a href="#">Show me more</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="item">
+                <img src="/img/portfolio/icon-4.svg" alt="" />
+                <h3>Choose the type of stop</h3>
+                <p>
+                  Select the type of stopover you are ordering from Equipped
+                  Area, Camping and Agricamping
+                </p>
+                <a href="#">Show me more</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="row">
+            <div class="col-4">
+              <div class="item">
+                <h3>Join the community campervan sites managers.</h3>
+                <p>
+                  Discover all the equibbed areas in Italy. Find the shop with
+                  all the services for you and your camper.
+                </p>
+                <button>Start</button>
+              </div>
+            </div>
+            <% for (var manager of managers) { %>
+            <div class="col">
+                <%- include('item', {item: manager}); %>
+            </div>
+            <% } %>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
-        <div class="container"></div>
+      <div class="container"></div>
     </footer>
-</body>
+  </body>
 </html>

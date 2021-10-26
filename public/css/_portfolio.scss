@@ -3,6 +3,9 @@
     background-size: 100%;
     padding: 40px 0px 60px 0px;
 }
+section {
+    margin-bottom: 230px;
+}
 .portfolio-block {
     box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
     width: 740px;
@@ -45,4 +48,14 @@
     font-weight: 700;
     font-size: 18px; 
     text-decoration: none;
-}    
+}  
+.item {
+    p {
+        color: #808080;
+    }
+    a {
+        color: #F78065;
+        text-decoration: none;
+        font-weight: 700;
+    }  
+}
