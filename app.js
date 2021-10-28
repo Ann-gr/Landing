@@ -1,6 +1,6 @@
 const express = require("express");
 const User = require("./model/User");
-const { promos, managers } = require("./data/landing");
+const { promos, priorities, managers, advantages } = require("./data/landing");
 const app = express();
 const PORT = 3001;
 app.set("view engine", "ejs");
@@ -29,7 +29,9 @@ app.get("/users/:id", (req, res) => {
 app.get("/portfolio", (req, res) => {
   res.render("portfolio", {
     promos: promos,
+    priorities: priorities,
     managers: managers,
+    advantages: advantages,
   });
 });
 
