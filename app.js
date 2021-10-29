@@ -7,11 +7,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.send("Hello world!");
-});
-
-app.get("/about", (req, res) => {
-  res.send("About page");
+  res.render("home");
 });
 
 app.get("/users", (req, res) => {
@@ -35,6 +31,9 @@ app.get("/portfolio", (req, res) => {
   });
 });
 
+app.get("/about", (req, res) => {
+  res.render("about");
+});
 
 app.listen(PORT, () => {
   console.log(`Server app listening at http://localhost:${PORT}`);
