@@ -1,13 +1,15 @@
 const express = require("express");
+const app = express();
+app.set("view engine", "ejs");
 const User = require("./model/User");
 const { promos, priorities, managers, advantages } = require("./data/landing");
-const app = express();
 const PORT = 3001;
-app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("home");
+  res.render("home", {
+    promos: promos,
+  });
 });
 
 app.get("/users", (req, res) => {

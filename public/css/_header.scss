@@ -1,0 +1,37 @@
+.portfolio-bg {
+  background: url(/img/portfolio/portfolio-bg.jpg) top center no-repeat;
+  background-size: 100%;
+  padding: 40px 0px 60px 0px;
+  margin-bottom: 60px;
+  &_sm {
+    padding: 20px 0px 20px 0px;
+  }
+}
+.icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-icon {
+    img {
+        width: 64px;
+    }
+}
+.header-menu {
+    li {
+        display: inline-block;
+        background-color: white;
+        padding: 12px;
+    }
+    a {
+        color:$main-color;
+        font-weight: 700; 
+    }
+}
+
+// mobile
+@media (max-width: 700px) {
+  .portfolio-bg {
+    margin-bottom: 0;
+  }
+}

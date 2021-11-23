@@ -3,6 +3,9 @@
   <div class="container">
     <section>
       <h1>Home</h1>
+      <% for (var promo of promos) { %>
+          <%- include('line', {item: promo}); %>
+        <% } %>
     </section>
   </div>
 </main>

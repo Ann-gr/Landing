@@ -11489,29 +11489,6 @@ button {
   padding: 12px 24px 12px 52px;
 }
 
-.portfolio-bg {
-  background: url(/img/portfolio/portfolio-bg.jpg) top center no-repeat;
-  background-size: 100%;
-  padding: 40px 0px 60px 0px;
-  margin-bottom: 60px;
-}
-
-.portfolio-bg_sm {
-  padding: 20px 0px 20px 0px;
-}
-
-.icons-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 section {
   margin-bottom: 200px;
 }
@@ -11705,9 +11682,6 @@ h6, .h6 {
 }
 
 @media (max-width: 700px) {
-  .portfolio-bg {
-    margin-bottom: 0;
-  }
   .portfolio-block {
     margin-top: 20px;
     padding: 50px;
@@ -11733,7 +11707,55 @@ h6, .h6 {
   }
 }
 
+.portfolio-bg {
+  background: url(/img/portfolio/portfolio-bg.jpg) top center no-repeat;
+  background-size: 100%;
+  padding: 40px 0px 60px 0px;
+  margin-bottom: 60px;
+}
+
+.portfolio-bg_sm {
+  padding: 20px 0px 20px 0px;
+}
+
+.icons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-icon img {
+  width: 64px;
+}
+
+.header-menu li {
+  display: inline-block;
+  background-color: white;
+  padding: 12px;
+}
+
+.header-menu a {
+  color: #f78065;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .portfolio-bg {
+    margin-bottom: 0;
+  }
+}
+
 .special {
   background-color: gray;
+}
+
+.line img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

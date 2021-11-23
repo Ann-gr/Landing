@@ -4,7 +4,7 @@ a {
 button {
   width: 250px;
   height: 65px;
-  background-color: #f78065;
+  background-color: $main-color;
   color: #ffffff;
   border: none;
   font-family: Montserrat;
@@ -24,20 +24,6 @@ button {
   background-size: auto;
   background-repeat: no-repeat;
   padding: 12px 24px 12px 52px;
-}
-.portfolio-bg {
-  background: url(/img/portfolio/portfolio-bg.jpg) top center no-repeat;
-  background-size: 100%;
-  padding: 40px 0px 60px 0px;
-  margin-bottom: 60px;
-  &_sm {
-    padding: 20px 0px 20px 0px;
-  }
-}
-.icons-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 section {
   margin-bottom: 200px;
@@ -59,7 +45,7 @@ section {
     line-height: 49px;
   }
   span {
-    color: #f78065;
+    color: $main-color;
   }
   .offer-text {
     font-family: Montserrat;
@@ -100,7 +86,7 @@ h6 {
     line-height: 20px;
   }
   a {
-    color: #f78065;
+    color: $main-color;
     text-decoration: none;
     font-family: Montserrat;
     font-weight: 700;
@@ -209,12 +195,8 @@ h6 {
 .avatar {
     border-radius: 50%;
 }
-
 // mobile
 @media (max-width: 700px) {
-  .portfolio-bg {
-    margin-bottom: 0;
-  }
   .portfolio-block {
   margin-top: 20px;
   padding: 50px;
