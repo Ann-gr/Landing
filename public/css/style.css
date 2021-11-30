@@ -11490,7 +11490,7 @@ button {
 }
 
 section {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .portfolio-block {
@@ -11587,12 +11587,6 @@ h6, .h6 {
   padding-bottom: 60px;
 }
 
-.footer-lists .col {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .footer-lists ul {
   list-style: none;
   padding: 0;
@@ -11681,29 +11675,9 @@ h6, .h6 {
   border-radius: 50%;
 }
 
-@media (max-width: 700px) {
-  .portfolio-block {
-    margin-top: 20px;
-    padding: 50px;
-    margin-left: 0;
-  }
-  .portfolio-block h1, .portfolio-block .h1 {
-    font-size: 24px;
-    line-height: 39px;
-  }
-  .portfolio-block .offer-text {
-    font-size: 11px;
-  }
-  .portfolio-block .offer-button {
-    background-position: 95px 50%;
-    width: 285px;
-  }
-  .container {
-    padding-left: 36px;
-    padding-right: 36px;
-  }
-  .item {
-    margin-bottom: 48px;
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 200px;
   }
 }
 
@@ -11711,7 +11685,7 @@ h6, .h6 {
   background: url(/img/portfolio/portfolio-bg.jpg) top center no-repeat;
   background-size: 100%;
   padding: 40px 0px 60px 0px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .portfolio-bg_sm {
@@ -11725,19 +11699,22 @@ h6, .h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .logo-icon img {
-  width: 64px;
+  width: 44px;
 }
 
 .header-menu li {
   display: inline-block;
   background-color: white;
-  padding: 12px;
+  padding: 3px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-size: 12px;
 }
 
 .header-menu a {
@@ -11745,9 +11722,26 @@ h6, .h6 {
   font-weight: 700;
 }
 
-@media (max-width: 700px) {
+.col-lg-3,
+.col-lg-9 {
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
   .portfolio-bg {
-    margin-bottom: 0;
+    margin-bottom: 60px;
+  }
+  .header-menu li {
+    display: inline-block;
+    background-color: white;
+    padding: 6px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-size: 16px;
+  }
+  .col-lg-3,
+  .col-lg-9 {
+    margin-top: 48px;
   }
 }
 

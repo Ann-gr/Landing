@@ -26,7 +26,7 @@ button {
   padding: 12px 24px 12px 52px;
 }
 section {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .portfolio-block {
   box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
@@ -115,9 +115,6 @@ h6 {
   padding-bottom: 60px;
 }
 .footer-lists {
-  .col {
-    justify-content: space-between;
-  }
   ul {
     list-style: none;
     padding: 0;
@@ -196,29 +193,9 @@ h6 {
     border-radius: 50%;
 }
 // mobile
-@media (max-width: 700px) {
-  .portfolio-block {
-  margin-top: 20px;
-  padding: 50px;
-  margin-left: 0;
-  & h1 {
-      font-size: 24px;
-      line-height: 39px;
-    }
-  & .offer-text {
-      font-size: 11px;
-    }
-  & .offer-button {
-      background-position: 95px 50%;
-      width: 285px;
-    }
+@media (min-width: $md) {
+  section {
+    margin-bottom: 200px;
   }
-  .container {
-    padding-left: 36px;
-    padding-right: 36px;
-  }
-  .item {
-    margin-bottom: 48px;
-  }
-}
+} 
 

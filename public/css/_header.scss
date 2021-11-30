@@ -2,7 +2,7 @@
   background: url(/img/portfolio/portfolio-bg.jpg) top center no-repeat;
   background-size: 100%;
   padding: 40px 0px 60px 0px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   &_sm {
     padding: 20px 0px 20px 0px;
   }
@@ -10,28 +10,48 @@
 .icons-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 .logo-icon {
-    img {
-        width: 64px;
-    }
+  img {
+    width: 44px;
+  }
 }
 .header-menu {
-    li {
-        display: inline-block;
-        background-color: white;
-        padding: 12px;
-    }
-    a {
-        color:$main-color;
-        font-weight: 700; 
-    }
+  li {
+    display: inline-block;
+    background-color: white;
+    padding: 3px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+  a {
+    color: $main-color;
+    font-weight: 700;
+  }
+}
+.col-lg-3,
+.col-lg-9 {
+  margin-top: 24px;
 }
 
 // mobile
-@media (max-width: 700px) {
+@media (min-width: $md) {
   .portfolio-bg {
-    margin-bottom: 0;
+    margin-bottom: 60px;
   }
+  .header-menu {
+    li {
+      display: inline-block;
+      background-color: white;
+      padding: 6px;
+      text-transform: uppercase;
+      border-radius: 2px;
+      font-size: 16px;
+    }
+  }
+  .col-lg-3, .col-lg-9 {
+  margin-top: 48px;
+}
 }
