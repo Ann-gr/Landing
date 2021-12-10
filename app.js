@@ -6,26 +6,26 @@ const { promos, priorities, managers, advantages } = require("./data/landing");
 const PORT = 3001;
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-  res.render("home", {
+app.get("/home", (req, res) => {
+  res.render("old/home", {
     promos: promos,
   });
 });
 
 app.get("/users", (req, res) => {
-  res.render("users", {
+  res.render("old/users", {
     users: User.list(),
   });
 });
 
 app.get("/users/:id", (req, res) => {
-  res.render("user", {
+  res.render("old/user", {
     user: User.getById(+req.params.id),
   });
 });
 
 app.get("/portfolio", (req, res) => {
-  res.render("portfolio", {
+  res.render("old/portfolio", {
     promos: promos,
     priorities: priorities,
     managers: managers,
@@ -34,7 +34,7 @@ app.get("/portfolio", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.render("about");
+  res.render("old/about");
 });
 
 app.listen(PORT, () => {
