@@ -6,6 +6,12 @@ const { promos, priorities, managers, advantages } = require("./data/landing");
 const PORT = 3001;
 app.use(express.static("public"));
 
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+//OLD VERSION
+
 app.get("/home", (req, res) => {
   res.render("old/home", {
     promos: promos,
