@@ -1,4 +1,49 @@
-html, body {
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+}
+header {
+  margin-bottom: 48px;
+  margin-top: 48px;
+  padding-right: 48px;
+  padding-left: 48px;
+}
+.container-header {
+    max-width: 100%;
+}
+.logo-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 212px;
+  height: 53px;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
     padding: 0;
     margin: 0;
+    & li {
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+    }
+    & a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 25px 20px;
+    }
 }
